@@ -1,0 +1,94 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', Georgia, serif;
+    line-height: 1.2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#background-container {
+    background-image: url(../assets/images/background1.png);
+    background-size: contain no-repeat;
+    -moz-border-radius: 0 0 0 60%;
+    -webkit-border-radius: 0 0 0 60%;
+    border-radius: 0 0 0 60%;
+    width: 100%;
+    height: 1000px;
+}
+
+.logo {
+    margin-left: 150px;
+}
+
+.navbar-margin {
+    margin-left: 660px;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+
+
+/* Large Devices, Wide Screens */
+@media screen and (min-width:1300px) {
+     #background-container {
+        height: 1000px;
+    }
+}
+/* Medium Devices, Desktops */ 
+@media screen and (max-width:1299px) {
+    #background-container {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    
+    .navbar-margin {
+        margin-left:500px;
+        font-size: medium;
+    }
+}
+/* Small Devices, Tablets */
+@media screen and (max-width:768px) {
+    .logo {
+        margin-left: 0;
+    }
+    
+    .navbar-margin {
+        margin-left: 0;
+        font-size: medium;
+    }
+    .nav-item {
+        padding-left: 1rem;
+    }
+}
+/* Extra Small Devices, Phones */
+@media screen and (max-width:480px) {
+     #background-container {
+        height: 300px;
+        width: auto;
+        background-size: cover;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    
+    .navbar-margin {
+        margin-left: 0;
+        font-size: small;
+    }
+
+    .nav-item {
+        align-self: flex-end;
+        padding-top: 0.2rem;
+        padding-right: 1rem;
+        background-color: #fc60ae;
+        border-radius: 0 0 50% 50%;
+    }
+}
+
