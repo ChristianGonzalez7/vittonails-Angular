@@ -19,23 +19,75 @@
 }
 
 .logo {
-    margin-left: 150px;
+    float: left;
+    height: 250px;
+    position: absolute;
+    margin-left: 3rem;
+    margin-top: -30px;
 }
 
 .navbar-margin {
-    margin-left: 660px;
+    margin-left: 900px;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .nav-item {
     cursor: pointer;
 }
 
+button {
+    margin-left: 80%;
+}
+
+
 
 
 /* Large Devices, Wide Screens */
 @media screen and (min-width:1300px) {
-     #background-container {
-        height: 1000px;
+    #item1, #item2, #item3 {
+        color:transparent;
+    }
+
+/* ANIMATIONS */
+
+    #item1 {
+        animation-name: item1;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes item1 {
+        0% {color: transparent}
+        100% {color: black}
+    }
+    
+    #item2 {
+        animation-name: item2;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-delay: 0.6s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes item2 {
+        0% {color: transparent;}
+        100% {color: black;}
+    }
+    
+    #item3 {
+        animation-name: item3;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes item3 {
+        0% {color: transparent;}
+        100% {color: black;}
     }
 }
 /* Medium Devices, Desktops */ 
@@ -43,9 +95,6 @@
     #background-container {
         background-size: contain;
         background-repeat: no-repeat;
-    }
-    .logo {
-        margin-left: 0;
     }
     
     .navbar-margin {
@@ -55,30 +104,39 @@
 }
 /* Small Devices, Tablets */
 @media screen and (max-width:768px) {
-    .logo {
-        margin-left: 0;
-    }
-    
     .navbar-margin {
         margin-left: 0;
         font-size: medium;
     }
     .nav-item {
-        padding-left: 1rem;
+        align-self: flex-end;
+        padding-top: 0.2rem;
+        padding: 0rem 1.5rem;
+        margin-top: 15px;
+        background-color: #fc60ae;
+        border-radius: 0 0 50% 50%;
+    }
+    .logo {
+        height: 180px;
+        margin-left: 2rem;
+    }
+    button {
+        margin-left: 85%;
+    }
+    .navbar-nav {
+        margin-top: 50px;
     }
 }
 /* Extra Small Devices, Phones */
 @media screen and (max-width:480px) {
-     #background-container {
-        height: 300px;
-        width: auto;
-        background-size: cover;
-    }
     .logo {
-        margin-left: 0;
+        height: 100px;
+        margin-left: 1rem;
+        margin-top: -20px;
     }
     
     .navbar-margin {
+        margin-top: -20px;
         margin-left: 0;
         font-size: small;
     }
@@ -86,7 +144,7 @@
     .nav-item {
         align-self: flex-end;
         padding-top: 0.2rem;
-        padding-right: 1rem;
+        padding: 0rem 0.7rem;
         background-color: #fc60ae;
         border-radius: 0 0 50% 50%;
     }
