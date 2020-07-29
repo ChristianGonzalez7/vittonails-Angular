@@ -128,6 +128,23 @@ p {
     background-color: purple;
     padding: 2rem;
     border-radius: 1rem;
+    cursor: pointer;
+}
+
+#logo-midpage {
+    height: 30em;
+    margin: 0 auto;
+    animation-name: spinning-logo;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    -moz-animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: block;
+}
+
+@keyframes spinning-logo {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
 
@@ -226,6 +243,12 @@ p {
     #item1, #item2, #item3 {
         color: white;
     }
+    .circular-images {
+        margin-left: 33%;
+    }
+    .negative-margin {
+        margin-top: -30rem;
+    }
 }
 /* Extra Small Devices, Phones */
 @media screen and (max-width:480px) {
@@ -248,11 +271,67 @@ p {
         background-color: #fc60ae;
         border-radius: 0 0 50% 50%;
     }
+
+    .circular-images {
+        margin-left: 19%;
+    }
+
     #item1, #item2, #item3 {
         color: white;;
     }
     .negative-margin {
         margin-top: -40rem;
+    }
+
+    #second-background-container {
+        background-image: url(../assets/images/background4.png);
+        background-size: contain no-repeat;
+        width: 100%;
+        height: 400px;
+        margin-top: 8rem;
+    }
+    
+    .info-container {
+        height: 23rem;
+        width: 60%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    
+    h6 {
+        letter-spacing: -0.02em;   
+        font-size: 0.7rem;
+        color: wheat;
+        font-weight: lighter;
+    }
+    
+    h1 {
+        font-size: 1rem;
+    }
+    
+    p {
+        letter-spacing: 0.1em;
+        font-size: 0.7rem;
+        line-height: 1.8;
+        font-weight: 100;
+    }
+    
+    .info {
+        padding: 0.2rem;
+        margin: 0px 1rem;
+    }
+
+    #btn-reservar-cita {
+        font-size: 0.7rem;
+        margin: 0 auto;
+        width: 80%;
+        padding: 0.3rem;
+        border-radius: 1rem;
+        margin-top:0.3rem;
+    }
+
+    #logo-midpage {
+        height: 15em;
     }
 }
 
