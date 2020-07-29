@@ -65,6 +65,7 @@ a {
     border-radius: 50%;
     margin-left: 20%;
     margin-top:3rem;
+    cursor: pointer;
 }
 
 .circular-images:last-of-type {
@@ -92,6 +93,27 @@ a {
     margin-top: 150px;
 }
 
+#color-splash {
+    align-self: flex-end;
+}
+
+.donde-llegamos {
+    font-size: 3em;
+    line-height: 1.5em;
+    color: black;
+}
+
+.list {
+    margin-top: 3rem;
+    list-style-type: square;
+}
+
+.donde-llegamos-lis {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: x-large;
+}
+
 .info-container {
     height: 850px;
     width: 460px;
@@ -108,7 +130,7 @@ h6 {
     color: white;
 }
 
-h1 {
+h1:first-of-type {
     letter-spacing: -0.0em;
     line-height: 1.1;
     color: white;
@@ -140,23 +162,6 @@ p {
     border-radius: 1rem;
     cursor: pointer;
 }
-
-#logo-midpage {
-    height: 30em;
-    margin: 0 auto;
-    animation-name: spinning-logo;
-    animation-duration: 10s;
-    animation-delay: 0s;
-    -moz-animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    display: block;
-}
-
-@keyframes spinning-logo {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-}
-
 
 /* Large Devices, Wide Screens */
 @media screen and (min-width:1300px) {
@@ -225,9 +230,16 @@ p {
     #item1, #item2, #item3 {
         color: white;
     }
+    #color-splash {
+        height: 400px;
+        margin-left:auto; 
+        margin-right:auto; 
+        display:block; 
+        margin-bottom: 2rem;
+    }
 }
 /* Small Devices, Tablets */
-@media screen and (max-width:768px) {
+@media screen and (max-width:769px) {
     .navbar-margin {
         margin-left: 0;
         font-size: medium;
@@ -254,10 +266,26 @@ p {
         color: white;
     }
     .circular-images {
-        margin-left: 33%;
+        margin-left:auto; 
+        margin-right:auto; 
+        display:block; 
     }
     .negative-margin {
         margin-top: -30rem;
+    }
+    .logo {
+        margin-left: 0.5rem;
+    }
+    
+    @keyframes resized-logo {
+        0% {height: 0px;}
+        100% {height: 180px;}
+    }
+    #color-splash {
+        height: 200px;
+        margin-left:auto; 
+        margin-right:auto; 
+        display:block; 
     }
 }
 /* Extra Small Devices, Phones */
@@ -283,7 +311,9 @@ p {
     }
 
     .circular-images {
-        margin-left: 19%;
+        margin-left:auto; 
+        margin-right:auto; 
+        display:block; 
     }
 
     #item1, #item2, #item3 {
@@ -315,7 +345,7 @@ p {
         font-weight: lighter;
     }
     
-    h1 {
+    h1:first-of-type {
         font-size: 1rem;
     }
     
@@ -340,8 +370,33 @@ p {
         margin-top:0.3rem;
     }
 
-    #logo-midpage {
-        height: 15em;
+    .donde-llegamos {
+        font-size: 70px
+    }
+
+    #color-splash {
+        height: 300px;
+        margin-left:auto; 
+        margin-right:auto; 
+        display:block; 
+    }
+    .donde-llegamos {
+        font-size: 2em;
+        line-height: 1.5em;
+        color: black;
+    }
+    .list {
+        margin-top: 1rem;
+        list-style-type: square;
+    }
+
+    .logo {
+        margin-left: 0.5rem;
+    }
+    
+    @keyframes resized-logo {
+        0% {height: 0px;}
+        100% {height: 100px;}
     }
 }
 
