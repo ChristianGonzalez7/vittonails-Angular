@@ -50,20 +50,19 @@ a {
 
 .circular-images {
     object-fit: cover;
-    width: 336px;
-    height: 336px;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
+    margin-left: 20%;
+    margin-top:3rem;
 }
 
 .circular-images:last-of-type {
     object-fit: fill;
-    width: 336px;
-    height: 336px;
-    border-radius: 50%;
 }
 
 .opiniones-container {
-    margin-top: 300px;
+    margin-top: 10rem;
 }
 
 .opiniones {
@@ -84,12 +83,13 @@ a {
 }
 
 .info-container {
-    height: 900px;
-    width: 430px;
+    height: 850px;
+    width: 460px;
     float:left;
     margin-left: 200px;
     margin-top: 100px;
     background-color: deeppink;
+    border-radius: 0.3rem;
 }
 
 h6 {
@@ -106,9 +106,11 @@ h1 {
 
 p {
     letter-spacing: 0.1em;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.8;
     font-weight: 100;
     color: white;
+    text-rendering: optimizeLegibility !important;
 }
 
 .info {
@@ -120,9 +122,12 @@ p {
 
 #btn-reservar-cita {
     margin: 0 auto;
-    width: 210px;
+    width: 70%;
     margin-bottom: 0px;
     color: white;
+    background-color: purple;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 
@@ -245,6 +250,9 @@ p {
     }
     #item1, #item2, #item3 {
         color: white;;
+    }
+    .negative-margin {
+        margin-top: -40rem;
     }
 }
 
