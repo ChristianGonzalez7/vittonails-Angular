@@ -163,6 +163,41 @@ p {
     cursor: pointer;
 }
 
+#btn-reservar-cita:hover {
+    background-color: white;
+    color: purple;
+    border: 3px solid purple;
+    font-size: large;
+}
+
+#whatsapp-logo {
+    cursor: pointer;
+}
+
+.tienes-dudas-container {
+    background-color: #c92d8d;
+    padding:5rem 0px;
+    margin: 4rem 0px;
+}
+
+#tienes-dudas-title {
+    line-height: 1.8em;
+}
+
+.change-color {
+    color: wheat;
+}
+
+.all-rights-reserved {
+    display: block;
+    color: gray;
+    margin-top: 2rem;
+}
+
+.instagram-logo {
+    cursor: pointer;
+}
+
 /* Large Devices, Wide Screens */
 @media screen and (min-width:1300px) {
     #item1, #item2, #item3 {
