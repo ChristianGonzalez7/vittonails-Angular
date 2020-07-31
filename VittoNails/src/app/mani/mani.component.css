@@ -1,0 +1,23 @@
+.title {
+    font-style: italic;
+    font-weight: 350;
+    line-height: 50px;
+    font-size: 65px;
+    letter-spacing: -0.04em;
+    line-height: 1.8em;
+    text-rendering: optimizeLegibility !important;
+}
+
+.change-color {
+    color: wheat;
+}
+
+.tienes-dudas-container {
+    background-color: #c92d8d;
+    padding:5rem 0px;
+    margin: 4rem 0px;
+}
+
+.card {
+    cursor: pointer;
+}
