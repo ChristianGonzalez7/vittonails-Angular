@@ -8,6 +8,8 @@ import { ManiComponent } from './mani/mani.component';
 import { PediComponent } from './pedi/pedi.component';
 import { ManipediComponent } from './manipedi/manipedi.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { QuienessomosComponent } from './quienessomos/quienessomos.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HomepageComponent } from './homepage/homepage.component';
     ManiComponent,
     PediComponent,
     ManipediComponent,
-    HomepageComponent
+    HomepageComponent,
+    ContactoComponent,
+    QuienessomosComponent
   ],
   imports: [
     BrowserModule,
