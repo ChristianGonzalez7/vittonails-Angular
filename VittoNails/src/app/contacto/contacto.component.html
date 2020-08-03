@@ -1,46 +1,22 @@
-<form>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputPassword4">Password</label>
-        <input type="password" class="form-control" id="inputPassword4">
+<form class="negative-margin mt-lg-5">
+    <div class="form-row justify-content-lg-center">
+      <div class="form-group text-center col-lg-4 col-sm-5">
+        <label for="nombre1">Nombre</label>
+        <input type="text" class="form-control" id="nombre1" [(ngModel)]="this.nombre" [ngModelOptions]="{standalone: true}">
       </div>
     </div>
-    <div class="form-group">
-      <label for="inputAddress">Address</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-    </div>
-    <div class="form-group">
-      <label for="inputAddress2">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputCity">City</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="form-group col-md-4">
-        <label for="inputState">State</label>
-        <select id="inputState" class="form-control">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="form-group col-md-2">
-        <label for="inputZip">Zip</label>
-        <input type="text" class="form-control" id="inputZip">
+    <div class="form-row justify-content-lg-center">
+      <div class="form-group text-center col-lg-4 col-sm-5">
+        <label for="apellido1">Apellido</label>
+        <input type="text" class="form-control" id="apellido1" [(ngModel)]="this.apellido" [ngModelOptions]="{standalone: true}">
       </div>
     </div>
-    <div class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Check me out
-        </label>
+    <div class="form-row justify-content-lg-center">
+      <div class="form-group text-center col-lg-4 col-sm-5">
+        <label for="consulta1">Escriba su consulta</label>
+        <textarea rows="8" cols="20" class="form-control" id="consulta1" [(ngModel)]="this.consulta" [ngModelOptions]="{standalone: true}"></textarea>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    
+    <button type="submit" class="btn btn-primary" (click)="sendEmail()"><a [href]="this.envioMail" class="text-decoration-none color-white">Enviar consulta</a></button>
   </form>

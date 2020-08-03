@@ -12,12 +12,24 @@
     color: wheat;
 }
 
+.change-color-dark {
+    color: #cec69bd7;
+}
+
 .tienes-dudas-container {
     background-color: #c92d8d;
     padding:5rem 0px;
     margin: 4rem 0px;
 }
 
-.card {
+img {
+    object-fit: fill;
+    height: 220px;
+}
+
+#whatsapp-logo {
     cursor: pointer;
+    width: 258px;
+    height: 73px;
+    object-fit: contain;
 }

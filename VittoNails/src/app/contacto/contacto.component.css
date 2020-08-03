@@ -1,0 +1,15 @@
+button {
+    margin: 0 auto;
+    display: block;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@media screen and (max-width:769px) {
+    .negative-margin {
+        margin-top: -40rem;
+    }
+}

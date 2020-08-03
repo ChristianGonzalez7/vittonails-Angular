@@ -1,0 +1,18 @@
+#background-quienessomos {
+    background: url(../../assets/images/background-quienessomos.jpg);
+    object-fit: fill;
+    border-radius: 5%;
+}
+
+p {
+    font-weight: 600;
+    line-height: 2rem;
+    word-spacing: 0.05rem;
+    letter-spacing: 0.05rem;    
+}
+
+@media only screen and (max-width:769px) {
+    .negative-margin {
+        margin-top: -40rem;
+    }
+}
