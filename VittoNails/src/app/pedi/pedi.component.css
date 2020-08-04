@@ -37,3 +37,9 @@ img {
 .card {
     max-width: 348px;
 }
+
+@media only screen and (max-width:769px) {
+    .tienes-dudas-container {
+        margin-top: -30rem;
+    }
+}
