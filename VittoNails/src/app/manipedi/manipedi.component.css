@@ -34,8 +34,32 @@ img {
     object-fit: contain;
 }
 
+#adicionales-title {
+    color: #cec69bd7;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5%;
+    font-weight: bolder;
+    letter-spacing: 1rem;
+}
+
+.color-precio {
+    font-weight: bolder;
+    color:solid black;
+}
+
+.adicionales-h5 {
+    background-color: lightcoral;
+    border-radius: 5%;
+    display: inline;
+    border: dotted 0.3rem palevioletred;
+}
+
 @media only screen and (max-width:769px) {
     .tienes-dudas-container {
         margin-top: -30rem;
+    }
+    #adicionales-title {
+        letter-spacing: 0.4rem;
     }
 }
