@@ -34,6 +34,24 @@ img {
     object-fit: contain;
 }
 
+#adicionales-title {
+    color: #cec69bd7;
+    margin: 0 auto;
+    background-color: #c92d8d;
+    border-radius: 5%;
+}
+
+.color-precio {
+    font-weight: bolder;
+    color:solid black;
+}
+
+.adicionales-h5 {
+    background-color: lightcoral;
+    border-radius: 5%;
+    display: inline;
+}
+
 @media only screen and (max-width:769px) {
     .tienes-dudas-container {
         margin-top: -30rem;
